@@ -3,4 +3,6 @@ _site
 .jekyll-metadata
 CNAME
 .brackets.json
-images/*
+images/**/*
+node_modules/**/**/*
+package.json
