@@ -1,24 +1,45 @@
 ---
-layout: default
+layout: home
 ---
 
 <div class="home">
+  <section class="intro">
+    <div></div>
+    <h1 class="page-heading"><span>Hi. <br />My name is Jim Merritt</span><span>I am a designer and developer living in Cincinnati, OH.</span></h1>
+    <div></div>
+  </section>
 
-  <h1 class="page-heading">Jim Merritt's Site</h1>
-  <h2>My site is currently being built. I am putting this site together using Jekyll. I have not done this before, so it may take a while to get comfortable. No promises on timing!</h2>
-
-  <!--<ul class="post-list">
+  <section class="portfolio-index">
+    <h2>Check Out Some Of My Work</h2>
+    <ul>
     {% for post in site.posts %}
+      {% if post.section contains 'portfolio' %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+          <h3>{{ post.title }}</h3>
+          <img src="/images/portfolio/portfolio_thumbnails/{{ post.image }}">
+        </a>
       </li>
+      {% endif %}
     {% endfor %}
-  </ul>-->
-
+    </ul>
+  </section>
+  
+  <!--<section class="blog-index">
+    <h2>Or Read Some Thoughts I've Had</h2>
+    <ul>
+      {% for post in site.posts %}
+        {% if post.section contains 'blog' %}
+        <li>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+            <h3>{{ post.title }}</h3>
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <p>{{ post.excerpt }}</p>
+          </a>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
   <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
-
 </div>

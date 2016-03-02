@@ -1,0 +1,32 @@
+{
+  "name": "jimmerritt.io",
+  "version": "1.0.0",
+  "description": "A portfolio and blog site for Jim Merritt, a Graphic Designer and Front End Developer working in Cincinnati, OH.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JimMerritt/JimMerritt.github.io.git"
+  },
+  "keywords": [
+    "Graphic",
+    "Design",
+    "Web",
+    "Design",
+    "Front",
+    "End",
+    "Development"
+  ],
+  "author": "Jim Merritt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JimMerritt/JimMerritt.github.io/issues"
+  },
+  "homepage": "https://github.com/JimMerritt/JimMerritt.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^2.4.0"
+  }
+}

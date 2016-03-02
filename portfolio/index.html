@@ -1,0 +1,20 @@
+---
+layout: page
+title: 'Portfolio'
+section: portfolio
+---
+
+<ul class="portfolio-list">
+  {% for post in site.posts %}
+    {% if post.section contains 'portfolio' %}
+    <li>
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+        {% if post.image %}
+          <img src="/images/portfolio/portfolio_thumbnails/{{ post.image }}">  
+        {% endif %}
+        <h3>{{ post.title }}</h3>
+      </a>
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>

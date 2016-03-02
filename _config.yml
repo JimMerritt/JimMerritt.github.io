@@ -1,21 +1,12 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
 title: Jim Merritt, Designer & Front End Developer
 email: merritt.ja@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Jim Merritt's website. Developing this website as a
-  playground and testing area for learning web development
-  and practicing new technologies.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://jimmerritt.io" # the base hostname & protocol for your site
-# twitter_username: jekyllrb
-# github_username:  jekyll
+description: >
+  Jim Merritt's portfolio and (soon-to-be) blog site. Aside from showcasing my portfolio,
+  this site will act as a playground to test new web technologies while sharing my experiences.
+  Currently this site is built in Jekyll, aided by Gulp build tools.
+baseurl: ""
+url: "http://jimmerritt.io"
+#twitter_username: thirdactpub
+github_username:  JimMerritt
 
-# Build settings
 markdown: kramdown

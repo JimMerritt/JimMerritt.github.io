@@ -1,0 +1,12 @@
+strong {
+  font-weight: 700;
+}
+
+.name-with-line:after {
+  content: "";
+  display: block;
+  height: $spacing-unit / 4;
+  margin-bottom: $spacing-unit / 4;
+  width: 5%;
+  border-bottom: 1px solid $brand-color;
+}
