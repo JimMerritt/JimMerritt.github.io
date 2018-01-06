@@ -1,45 +1,50 @@
----
-layout: home
----
+--- layout: home ---
 
 <div class="home">
-  <section class="intro">
-    <div></div>
-    <h1 class="page-heading"><span>Hi. <br />My name is Jim Merritt</span><span>I am a designer and developer living in Cincinnati, OH.</span></h1>
-    <div></div>
-  </section>
-
-  <section class="portfolio-index">
-    <h2>Check Out Some Of My Work</h2>
-    <ul>
-    {% for post in site.posts %}
-      {% if post.section contains 'portfolio' %}
-      <li>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-          <h3>{{ post.title }}</h3>
-          <img src="/images/portfolio/portfolio_thumbnails/{{ post.image }}">
-        </a>
-      </li>
-      {% endif %}
-    {% endfor %}
-    </ul>
-  </section>
-  
-  <!--<section class="blog-index">
-    <h2>Or Read Some Thoughts I've Had</h2>
-    <ul>
-      {% for post in site.posts %}
-        {% if post.section contains 'blog' %}
-        <li>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-            <h3>{{ post.title }}</h3>
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-            <p>{{ post.excerpt }}</p>
-          </a>
-        </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </section>
-  <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
+  <div class="home__header">
+    <h1>Jim Merritt</h1>
+    <p>Design &amp; Development</p>
+  </div>
+  <div class="home__contact">
+    <p>513.479.1935</p>
+    <p>merritt.ja@gmail.com</p>
+    <a href="https://github.com/JimMerritt">github.com/JimMerritt</p>
+  </div>
+  <div class="home__skills">
+    <p>JavaScript</p>
+    <p>Angular</p>
+    <p>HTML/HTML 5</p>
+    <p>CSS</p>
+    <p>Sketch</p>
+    <p>Photoshop</p>
+    <p>Illustrator</p>
+    <p>InDesign</p>
+    <p>Lightroom</p>
+  </div>
+  <div class="home__education">
+    <p><b>Northern Kentucky University</b></p>
+    <p>Visual Communications Design</p>
+    <p>Minor in Computer Science</p>
+  </div>
+  <div class="home__experience">
+    <div class="experience__block">
+      <h2 class="block__company">Pure Romance</h2>
+      <p class="block__dates">2016–Present, Cincinnati</p>
+      <p class="block__title">Software Engineer</p>
+      <p class="block__description">Angular development, front end design and development for multiple platforms, UX/UI, site planning and testing, HTML
+        email production, managing and coaching junior level designers.</p>
+    </div>
+    <div class="experience__block">
+      <h2 class="block__company">Intrinzic</h2>
+      <p class="block__dates">2013–2016, Cincinnati</p>
+      <p class="block__title">Digital Designer, Front End Developer</p>
+      <p class="block__description">Front end design and development, UX/UI, site planning and testing, graphic design, logo design and brand development.</p>
+    </div>
+    <div class="experience__block">
+      <h2 class="block__company">Dean Houston</h2>
+      <p class="block__dates">2012, Cincinnati</p>
+      <p class="block__title">Freelance Designer</p>
+      <p class="block__description">Industrial manual production and design, advertisement and product display production and design for trade shows.</p>
+    </div>
+  </div>
 </div>
