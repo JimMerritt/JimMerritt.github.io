@@ -1,67 +1,52 @@
-<!DOCTYPE html>
-<html>
+---
+layout: home
+---
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <link rel="stylesheet" href="{{ " /css/main.css " | prepend: site.baseurl }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ " /feed.xml
-    " | prepend: site.baseurl | prepend: site.url }}">
-</head>
-
-<body>
-  <div class="home">
-    <div class="home__header">
-      <h1>Jim Merritt</h1>
-      <p>Design &amp; Development</p>
+<div class="home">
+  <div class="home__header">
+    <h1>Jim Merritt</h1>
+    <p>Design &amp; Development</p>
+  </div>
+  <div class="home__contact">
+    <p>513.479.1935</p>
+    <p>merritt.ja@gmail.com</p>
+    <a href="https://github.com/JimMerritt">github.com/JimMerritt</p>
+  </div>
+  <div class="home__skills">
+    <p>JavaScript</p>
+    <p>Angular</p>
+    <p>HTML/HTML 5</p>
+    <p>CSS</p>
+    <p>Sketch</p>
+    <p>Photoshop</p>
+    <p>Illustrator</p>
+    <p>InDesign</p>
+    <p>Lightroom</p>
+  </div>
+  <div class="home__education">
+    <p><b>Northern Kentucky University</b></p>
+    <p>Visual Communications Design</p>
+    <p>Minor in Computer Science</p>
+  </div>
+  <div class="home__experience">
+    <div class="experience__block">
+      <h2 class="block__company">Pure Romance</h2>
+      <p class="block__dates">2016–Present, Cincinnati</p>
+      <p class="block__title">Software Engineer</p>
+      <p class="block__description">Angular development, front end design and development for multiple platforms, UX/UI, site planning and testing, HTML
+        email production, managing and coaching junior level designers.</p>
     </div>
-    <div class="home__contact">
-      <p>513.479.1935</p>
-      <p>merritt.ja@gmail.com</p>
-      <a href="https://github.com/JimMerritt">github.com/JimMerritt</p>
+    <div class="experience__block">
+      <h2 class="block__company">Intrinzic</h2>
+      <p class="block__dates">2013–2016, Cincinnati</p>
+      <p class="block__title">Digital Designer, Front End Developer</p>
+      <p class="block__description">Front end design and development, UX/UI, site planning and testing, graphic design, logo design and brand development.</p>
     </div>
-    <div class="home__skills">
-      <p>JavaScript</p>
-      <p>Angular</p>
-      <p>HTML/HTML 5</p>
-      <p>CSS</p>
-      <p>Sketch</p>
-      <p>Photoshop</p>
-      <p>Illustrator</p>
-      <p>InDesign</p>
-      <p>Lightroom</p>
-    </div>
-    <div class="home__education">
-      <p><b>Northern Kentucky University</b></p>
-      <p>Visual Communications Design</p>
-      <p>Minor in Computer Science</p>
-    </div>
-    <div class="home__experience">
-      <div class="experience__block">
-        <h2 class="block__company">Pure Romance</h2>
-        <p class="block__dates">2016–Present, Cincinnati</p>
-        <p class="block__title">Software Engineer</p>
-        <p class="block__description">Angular development, front end design and development for multiple platforms, UX/UI, site planning and testing, HTML
-          email production, managing and coaching junior level designers.</p>
-      </div>
-      <div class="experience__block">
-        <h2 class="block__company">Intrinzic</h2>
-        <p class="block__dates">2013–2016, Cincinnati</p>
-        <p class="block__title">Digital Designer, Front End Developer</p>
-        <p class="block__description">Front end design and development, UX/UI, site planning and testing, graphic design, logo design and brand development.</p>
-      </div>
-      <div class="experience__block">
-        <h2 class="block__company">Dean Houston</h2>
-        <p class="block__dates">2012, Cincinnati</p>
-        <p class="block__title">Freelance Designer</p>
-        <p class="block__description">Industrial manual production and design, advertisement and product display production and design for trade shows.</p>
-      </div>
+    <div class="experience__block">
+      <h2 class="block__company">Dean Houston</h2>
+      <p class="block__dates">2012, Cincinnati</p>
+      <p class="block__title">Freelance Designer</p>
+      <p class="block__description">Industrial manual production and design, advertisement and product display production and design for trade shows.</p>
     </div>
   </div>
-</body>
-
-</html>
+</div>
