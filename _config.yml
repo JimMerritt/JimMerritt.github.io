@@ -1,9 +1,7 @@
 title: Jim Merritt, Designer & Front End Developer
 email: merritt.ja@gmail.com
 description: >
-  Jim Merritt's portfolio and (soon-to-be) blog site. Aside from showcasing my portfolio,
-  this site will act as a playground to test new web technologies while sharing my experiences.
-  Currently this site is built in Jekyll, aided by Gulp build tools.
+  Jim Merritt's resume website, built in Jekyll and hosted through GitHub pages.
 baseurl: ""
 url: "http://jimmerritt.io"
 #twitter_username: thirdactpub
