@@ -41,7 +41,7 @@
     }
   }
   @media screen and (max-width: 725px) {
-    grid-template: 100px auto / 1fr;
+    grid-template: 80px auto / 1fr;
     grid-gap: 2rem 0;
     .block {
       grid-column-end: -1;
