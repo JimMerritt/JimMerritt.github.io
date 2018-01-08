@@ -1,12 +1,46 @@
-strong {
-  font-weight: 700;
+body {
+  line-height: 1.7rem;
 }
 
-.name-with-line:after {
-  content: "";
-  display: block;
-  height: $spacing-unit / 4;
-  margin-bottom: $spacing-unit / 4;
-  width: 5%;
+h1, h2, h3 {
+  margin: 0 0 0.15em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $headings-color;
+}
+
+h1 {
+  font-size: 1.625rem;
+}
+
+h2 {
+  font-size: 1.05rem;
+  letter-spacing: 0.135em;
+  margin: 0 0 1.05rem;
+  padding: 0 0 0.75rem;
   border-bottom: 1px solid $brand-color;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.075em;
+}
+
+p, li {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 300;
+  color: $text-color;
+  letter-spacing: 0.045em;
+}
+
+b, strong {
+  font-weight: 700;
+  color: $headings-color;
+}
+
+em {
+  font-style: italic;
+  color: $secondary-text;
 }

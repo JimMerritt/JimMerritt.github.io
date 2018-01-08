@@ -1,179 +1,50 @@
 .home {
-  width: 100%;
-  margin: 0 auto;
+  width: 85%;
+  max-width: 50rem;
+  margin: 4rem auto;
   padding: 0;
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .intro {
-    height: 85vh;
-    box-sizing: border-box;
-    display: flex;
-    width: 100vw;
-
-    div {
-      margin: 0;
-      background-size: cover;
-      background-position: center;
-
-      &:first-of-type {
-        width: 3vw;
-        background-image: url("/images/home-page/scanned_slide_01_blur.jpg");
+  display: grid;
+  grid-template: 50px auto auto / repeat(2, 1fr);
+  grid-gap: 3rem 6rem;
+  .home__header {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 2;
+    .logo {
+      width: 20rem;
+      margin-left: -3.25rem;
+      @media screen and (max-width: 825px) {
+        margin-left: 0;
       }
-
-      &:last-of-type {
-        width: 37vw;
-        background-image: url("/images/home-page/scanned_slide_02.jpg");
+      @media screen and (max-width: 725px) {
+        width: 85vw;
       }
     }
-
-    h1 {
-      display: flex;
-      width: 50vw;
-      height: 55vh;
-      padding-top: 20vh;
-      margin: 0 8vw 0 2vw;
-
-      span {
-        display: block;
-        margin: 0;
-
-        &:first-of-type {
-          font-size: 5vw;
-          line-height: 1;
-          width: 30vw;
-        }
-
-        &:last-of-type {
-          font-size: 1.5vw;
-          align-self: flex-end;
-          border-top: 1px solid $brand-color;
-          line-height: 1.5;
-        }
-      }
+    .logo__name {
+      fill: $headings-color;
+    }
+    .logo__tagline {
+      fill: $brand-color;
     }
   }
-
-  .portfolio-index {
-    background-color: rgba(230, 230, 230, 0.3);
-    padding: 5vh 5vw;
-    width: 100vw;
-
-    h2 {
-      display: block;
-      margin: 0;
-
-      &:after {
-        content: "";
-        display: block;
-        margin: 1.5vh 0 5vh;
-        width: 2%;
-        border-bottom: 1px solid $brand-color;
-      }
-    }
-
+  .home__contact {}
+  .home__education {}
+  .home__skills {
     ul {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-
-      li {
-        width: 21vw;
-        margin: 0 2vw 2vw 0;
-
-        &:nth-child(4n + 4) {
-          margin-right: 0;
-        }
-
-        a {
-          width: 100%;
-          height: auto;
-          position: relative;
-          box-sizing: border-box;
-
-          h3 {
-            display: block;
-            font-size: 2em;
-            width: 100%;
-            position: absolute;
-            top: 50%;
-            -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-            padding: 0 2vw;
-            opacity: 0.0;
-            -webkit-transition: opacity .25s ease;
-            transition: opacity .25s ease;
-            box-sizing: border-box;
-            border-left: 5px solid $brand-color;
-          }
-
-          img {
-            width: 100%;
-            height: auto;
-            margin: 0;
-            -webkit-transition: opacity .25s ease;
-            transition: opacity .25s ease;
-          }
-
-          &:hover img {
-            opacity: 0.0;
-            -webkit-transition: opacity .25s ease;
-            transition: opacity .25s ease;
-          }
-
-          &:hover h3 {
-            opacity: 1.0;
-            -webkit-transition: opacity .25s ease;
-            transition: opacity .25s ease;
-          }
-        }
-      }
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
     }
   }
-
-  .blog-index {
-    padding: 5vh 5vw;
-    width: 100vw;
-
-    h2 {
-      display: block;
-      margin: 0;
-
-      &:after {
-        content: "";
-        display: block;
-        margin: 1.5vh 0 5vh;
-        width: 2%;
-        border-bottom: 1px solid $brand-color;
-      }
+  .home__experience {
+    .experience__block {
+      margin: 0 0 1.5rem;
     }
-
-    ul {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-
-      li {
-        width: 45%;
-        margin: 0;
-        padding: 5vw;
-        box-sizing: border-box;
-        background-color: #fff;
-        border: 1px solid $brand-color;
-        
-        &:nth-of-type(odd) {
-          margin-right: 5%;  
-        }
-        
-        p {
-         color: $text-color;  
-        }
-      }
+  }
+  @media screen and (max-width: 725px) {
+    grid-template: 100px auto / 1fr;
+    grid-gap: 2rem 0;
+    .block {
+      grid-column-end: -1;
     }
   }
 }

@@ -1,12 +1,8 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,700italic,900italic,900,700,300,400,400italic);
 
-
-// Our variables
-$base-font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: 'din-2014', 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   14px;
 $base-font-weight: 300;
 $small-font-size:  $base-font-size * 0.875;
@@ -14,46 +10,14 @@ $base-line-height: 1.5;
 
 $spacing-unit:     2rem;
 
-$text-color:       rgb(85, 81, 82);
-$background-color: #fdfdfd;
-$brand-color:      rgb(255, 132, 0);
+$headings-color:   #231f20;
+$text-color:       #58595b;
+$secondary-text:   #808285;
+$brand-color:      #f5841f;
 
-$grey-color:       rgb(35, 31, 32);
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
-
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
-
-
-
-// Import partials from `sass_dir` (defaults to `_sass`)
 @import
   "base",
-  "layout",
   "typography",
   "syntax-highlighting",
-  "header",
-  "footer",
-  "home",
-  "blog",
-  "portfolio"
+  "home"
 ;
