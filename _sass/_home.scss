@@ -27,7 +27,11 @@
     }
   }
   .home__contact {}
-  .home__education {}
+  .home__education {
+    .education__block {
+      margin: 0 0 1.5rem;
+    }
+  }
   .home__skills {
     ul {
       margin: 0;
