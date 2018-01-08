@@ -4,13 +4,13 @@ body {
 h1,
 h2,
 h3 {
-  margin: 0 0 0.15em;
   font-weight: 700;
   text-transform: uppercase;
   color: $headings-color;
 }
 h1 {
   font-size: 1.625rem;
+  margin: 0 0 0.15em;
 }
 h2 {
   font-size: 1.05rem;
@@ -23,6 +23,7 @@ h3 {
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 0.075em;
+  margin: 0;
 }
 li,
 p {
