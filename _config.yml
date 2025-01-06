@@ -1,10 +1,9 @@
-title: Jim Merritt, Designer & Front End Developer
+title: Jim Merritt, Front End Developer
 email: merritt.ja@gmail.com
 description: >
   Jim Merritt's resume website, built in Jekyll and hosted through GitHub pages.
 baseurl: ""
-url: "http://jimmerritt.io"
-#twitter_username: thirdactpub
-github_username:  JimMerritt
+url: "http://jimmerritt.dev"
+github_username: JimMerritt
 
 markdown: kramdown

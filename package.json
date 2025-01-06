@@ -1,5 +1,5 @@
 {
-  "name": "jimmerritt.io",
+  "name": "jimmerritt.dev",
   "version": "1.0.0",
   "description": "A portfolio and blog site for Jim Merritt, a Graphic Designer and Front End Developer working in Cincinnati, OH.",
   "main": "gulpfile.js",
@@ -11,13 +11,10 @@
     "url": "git+https://github.com/JimMerritt/JimMerritt.github.io.git"
   },
   "keywords": [
-    "Graphic",
-    "Design",
-    "Web",
-    "Design",
-    "Front",
-    "End",
-    "Development"
+    "Graphic Design",
+    "Web Design",
+    "Front End Development",
+    "Web Development"
   ],
   "author": "Jim Merritt",
   "license": "ISC",
