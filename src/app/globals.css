@@ -5,19 +5,30 @@
 :root {
 	--background: #ffffff;
 	--brand: #f5841f;
+	--brand-text: #231f20;
 	--heading: #231f20;
-	--secondary-text: #808285;
+	--secondary-text: #666668;
 	--text: #3b3c3d;
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
 	:root {
-		--background: #231f20;
+		/* Fallback solid color first */
+		--background: #181717;
+		/* Gradient override for supported browsers */
+		--background: linear-gradient(to bottom right, #0f0f0f, #1a1818);
+		--brand-text: #f5841f;
 		--heading: #ffffff;
 		--secondary-text: #b0b1b3;
-		--text: #d8d9da;
+		--text: #d4d4d4;
 	}
-} */
+}
+
+@media (prefers-reduced-motion: reduce) {
+	:root {
+		--background: #181717;
+	}
+}
 
 body {
 	background: var(--background);
