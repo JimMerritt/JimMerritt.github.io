@@ -1,16 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
+import type { PortfolioItem } from "@/types/PortfolioItem";
 import matter from "gray-matter";
-
-export interface PortfolioItem {
-	title: string;
-	date: string;
-	categories: string[];
-	section: string;
-	image: string;
-	slug: string;
-	content: string;
-}
 
 const contentDirectory = path.join(process.cwd(), "src/content");
 
@@ -24,6 +15,7 @@ export function getAllPortfolioItems(): PortfolioItem[] {
 				path.join(contentDirectory, "portfolio", file),
 				"utf8",
 			);
+
 			const { data, content } = matter(source);
 
 			return {

@@ -10,7 +10,7 @@ export default function Home() {
 	return (
 		<main
 			id="main-content"
-			className="max-w-5xl py-12 px-16 grid gap-x-12 gap-y-6 grid-cols-1 md:grid-cols-2 md:grid-rows-[auto_100px_auto]"
+			className="max-w-5xl grid gap-x-12 gap-y-6 grid-cols-1 md:grid-cols-2 md:grid-rows-[auto_100px_auto]"
 		>
 			<header className="md:col-span-2 row-start-1">
 				<h1 className="m-0 ml-[-1.65rem] p-0 leading-none">Jim Merritt</h1>

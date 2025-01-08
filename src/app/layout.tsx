@@ -41,7 +41,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`${sourceSans.variable} antialiased font-sans min-h-screen`}
+				className={`${sourceSans.variable} antialiased font-sans min-h-screen  py-12 px-16`}
 			>
 				<a
 					href="#main-content"
