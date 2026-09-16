@@ -101,22 +101,40 @@ export default function Home() {
 				aria-labelledby="skills"
 			>
 				<h2 id="skills">Skills</h2>
-				<div className="grid grid-cols-1 xl:grid-cols-2 gap-x-12 gap-y-6">
+				<div className="grid grid-cols-1 gap-y-6">
 					<dl>
 						<dt>Core Technical</dt>
 						<dd>
 							<ul className="m-0 p-0 list-none">
 								<li>TypeScript</li>
 								<li>JavaScript</li>
-								<li>React</li>
-								<li>React Native</li>
 								<li>Node</li>
-								<li>PWA Architecture</li>
-								<li>CI/CD</li>
-								<li>UI/UX</li>
+								<li>React</li>
 								<li>Next</li>
+								<li>React Native</li>
+								<li>GraphQL</li>
 								<li>HTML5</li>
 								<li>CSS3</li>
+								<li>PWA Architecture</li>
+								<li>UI/UX</li>
+							</ul>
+						</dd>
+					</dl>
+					<dl>
+						<dt>Data & Platform</dt>
+						<dd>
+							<ul className="m-0 p-0 list-none">
+								<li>PostgreSQL</li>
+								<li>Drizzle</li>
+								<li>Redis</li>
+								<li>BullMQ</li>
+								<li>OpenAPI</li>
+								<li>AWS</li>
+								<li>Snowflake</li>
+								<li>Datadog</li>
+								<li>GitHub Actions</li>
+								<li>CI/CD</li>
+								<li>Storybook</li>
 							</ul>
 						</dd>
 					</dl>
@@ -124,11 +142,17 @@ export default function Home() {
 						<dt>Team & Architectural</dt>
 						<dd>
 							<ul className="m-0 p-0 list-none">
+								<li>Platform Architecture</li>
 								<li>Frontend Architecture</li>
+								<li>API & Contract Design</li>
+								<li>Observability</li>
+								<li>Technical Scoping</li>
+								<li>ADRs</li>
 								<li>Agile Development</li>
 								<li>Team Development</li>
 								<li>Cross-Functional Collaboration</li>
 								<li>Code Mentoring</li>
+								<li>AI-Assisted Development</li>
 							</ul>
 						</dd>
 					</dl>
