@@ -15,7 +15,7 @@ export default function Home() {
 			<header className="md:col-span-2 row-start-1">
 				<h1 className="m-0 ml-[-1.65rem] p-0 leading-none">Jim Merritt</h1>
 				<p className="m-0 p-0 leading-none uppercase text-[--brand-text]">
-					Senior Frontend Developer
+					Senior Software Engineer
 				</p>
 			</header>
 			<section
@@ -23,6 +23,19 @@ export default function Home() {
 				aria-labelledby="experience"
 			>
 				<h2 id="experience">Experience</h2>
+				<article>
+					<h3>Topstep</h3>
+					<p className="text-[--secondary-text]">2025&ndash;Present</p>
+					<p>
+						<b>Senior Software Engineer</b>
+					</p>
+					<p className="mb-4">
+						Led trader platform feature development, scoped work for the team,
+						set architecture and review standards, mentored engineers, and
+						drove collaboration across product, design, and engineering toward
+						a shared feature-driven focus.
+					</p>
+				</article>
 				<article>
 					<h3>BrewLogix</h3>
 					<p className="text-[--secondary-text]">2024</p>

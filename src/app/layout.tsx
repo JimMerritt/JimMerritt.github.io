@@ -10,15 +10,15 @@ const sourceSans = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
-	title: "Jim Merritt | Senior Frontend Developer",
+	title: "Jim Merritt | Senior Software Engineer",
 	description:
-		"Senior Frontend Developer specializing in React, TypeScript, and React Native. Experienced in frontend architecture, team leadership, and UI/UX development.",
+		"Senior Software Engineer specializing in React, TypeScript, and React Native. Experienced in frontend architecture, team leadership, and UI/UX development.",
 	keywords:
-		"Frontend Developer, React, TypeScript, React Native, Frontend Architecture, UI/UX, JavaScript",
+		"Software Engineer, Frontend Developer, React, TypeScript, React Native, Frontend Architecture, UI/UX, JavaScript",
 	openGraph: {
-		title: "Jim Merritt | Senior Frontend Developer",
+		title: "Jim Merritt | Senior Software Engineer",
 		description:
-			"Senior Frontend Developer specializing in React, TypeScript, and React Native",
+			"Senior Software Engineer specializing in React, TypeScript, and React Native",
 		type: "profile",
 		locale: "en_US",
 		firstName: "Jim",

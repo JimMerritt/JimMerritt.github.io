@@ -1,7 +1,7 @@
 {
   "name": "jimmerritt.dev",
   "version": "1.0.0",
-  "description": "Senior Frontend Developer portfolio and blog site for Jim Merritt",
+  "description": "Senior Software Engineer portfolio and blog site for Jim Merritt",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
